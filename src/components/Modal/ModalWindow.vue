@@ -50,13 +50,14 @@ const mockFolders: Folder[] = [
   { id: 5, name: "Папка 2", children: [] },
 ];
 function selectFolder(): void {
-  closeModal();
   if (selectedFolder.value) {
     emits("select", selectedFolder.value);
   }
+  closeModal();
 }
 function closeModal(): void {
   emits("update:modelValue", false);
+  selectedFolder.value = "";
 }
 </script>
 
