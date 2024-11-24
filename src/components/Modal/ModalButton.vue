@@ -8,7 +8,7 @@
 import ModalWindow from "@/components/Modal/ModalWindow.vue";
 import { ref } from "vue";
 
-const showModal = ref(true);
+const showModal = ref(false);
 const modalTitle = ref("test");
 function customEmit(id: string): void {
   alert(`Выбранный id ${id}`);
