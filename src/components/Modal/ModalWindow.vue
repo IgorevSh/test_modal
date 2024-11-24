@@ -17,7 +17,7 @@
           ></list-folders>
         </div>
         <div class="modal_footer">
-          <button @click="selectFolder">Ок</button>
+          <button @click="selectFolder">ОК</button>
         </div>
       </div>
     </div>
